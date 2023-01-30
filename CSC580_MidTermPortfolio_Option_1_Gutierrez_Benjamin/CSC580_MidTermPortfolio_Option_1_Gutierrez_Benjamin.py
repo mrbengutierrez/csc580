@@ -10,8 +10,8 @@ def is_individual_in_photo(individual_filepath: str, group_filepath: str) -> boo
             True if the indvidual is in the photo, otherwise false
     """
 
-    known_image = face_recognition.load_image_file("individual_face_in_photo.jpg")
-    unknown_image = face_recognition.load_image_file("group_faces.jpg")
+    known_image = face_recognition.load_image_file(individual_filepath)
+    unknown_image = face_recognition.load_image_file(group_filepath)
 
     known_encoding = face_recognition.face_encodings(known_image)[0]
     unknown_encoding = face_recognition.face_encodings(unknown_image)[0]
