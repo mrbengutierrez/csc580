@@ -32,4 +32,4 @@ if __name__ == "__main__":
 
     not_in_photo_result = is_individual_in_photo(not_in_photo_filepath, group_filepath)
     print(f"Is {not_in_photo_filepath} contained in {group_filepath}?")
-    print(in_photo_result)
+    print(not_in_photo_result)
