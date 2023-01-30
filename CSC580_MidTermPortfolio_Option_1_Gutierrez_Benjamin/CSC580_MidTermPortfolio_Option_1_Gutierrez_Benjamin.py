@@ -18,7 +18,7 @@ individual_faces = detector(individual_image, 1)
 group_faces = detector(group_image, 1)
 
 # Encode the individual face
-individual_face_encoding = face_recognition.face_encodings(individual_image, individual_faces)[0]
+individual_face_encoding = face_recognition.face_encodings(individual_image, individual_faces)
 
 # Encode the faces in the group image
 group_face_encodings = face_recognition.face_encodings(group_image, group_faces)
