@@ -1,3 +1,11 @@
+"""
+Student: Benjamin Gutierrez
+Date: January 29, 2023
+Course: Applying Machine Learning and Neural Networks - Capstone
+Instructor: Lori Farr
+Assignment: MidTerm Portfolio Option 1
+"""
+
 import face_recognition
 
 
