@@ -18,8 +18,6 @@ def is_individual_in_photo(individual_filepath: str, group_filepath: str) -> boo
 
     results = face_recognition.compare_faces([known_encoding], unknown_encoding)
 
-    print(results)
-
     if True in results:
         return True
     return False
@@ -44,5 +42,5 @@ def not_in_photo():
 
 
 if __name__ == "__main__":
-    in_photo()
     not_in_photo()
+    in_photo()
